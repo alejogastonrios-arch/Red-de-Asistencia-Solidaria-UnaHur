@@ -1,0 +1,97 @@
+/*
+EJEMPLO
+h2{color: blue;}*/
+
+:root{
+    --color-primario: #1A2B4A;
+    --color-acento:#62979e;
+    --color-texto:#1A1A1A;
+    --color-fondo:#15225e;
+    --color-texto-claro:#FFFFFF;
+    --fuente-principal: "Inter", sans-serif,
+
+}
+/*RESET BASICO - setear a cero, es buena costrumbre*/
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+/*Estilo Globales*/
+html{font-size: 18px;}
+body{
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-texto);
+    background-color: var(--color-texto-claro);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+/*Tipografía*/
+h1 {text-align: center;}
+h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
+h2{ font-size: 1.50rem; color: var(--color-texto); text-align: center;}
+h3{font-size: 1.25rem; color: var(--color-acento);}
+p{margin-top: 1rem;}
+
+/*HEADER*/
+header{
+    background-color: var(--color-fondo);
+    color: var(--color-fondo);
+    padding: 1rem 1.5 rem;
+    text-align: center;
+}
+/*Menú Navegación*/
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+nav a{
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover{
+    color: var(--color-texto);
+    text-decoration: underline;
+}
+/*Main  Secciones*/
+main{
+    padding: 2rem 0;
+}
+section{
+    margin-bottom:  2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid;
+}
+/*FIURE - (sección pero de imágenes)*/
+figure{
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(300px, lfr));
+    gap: 15px;
+    justify-items: center;
+}
+figure img{
+    width: 10rem;
+    height: 15rem;
+    object-fit: cover; /*Con esto recortas la imagen manteniendo las proporciones*/
+    border-radius: 5px;
+}
+figcaption{
+    grid-row: 1/-1;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+/*FOOTER*/
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-acento);
+    padding: 1.5rem;
+    margin-top: 10px;
+    text-align: center;
+}
