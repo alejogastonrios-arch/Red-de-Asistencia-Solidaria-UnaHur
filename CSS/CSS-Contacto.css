@@ -1,0 +1,128 @@
+:root{
+    --color-primario: #1A2B4A;
+    --color-acento:#62979e;
+    --color-texto:#1A1A1A;
+    --color-fondo:#15225e;
+    --color-texto-claro:#FFFFFF;
+    --fuente-principal: "Inter", sans-serif,
+
+}
+
+*{box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{font-size: 18px;}
+
+body{
+    font-family: var(--fuente-principal);
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color-texto);
+    background-color: var(--color-texto-claro);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1 {text-align: center;}
+h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
+h2{ font-size: 1.50rem; color: var(--color-texto); text-align: center;}
+h3{font-size: 1.25rem; color: var(--color-acento);}
+p{margin-top: 1rem;}
+
+header{
+    background-color: var(--color-fondo);
+    color: var(--color-fondo);
+    padding: 1rem 1.5 rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+nav a{
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover{
+    color: var(--color-texto);
+    text-decoration: underline;
+}
+
+main p a{
+    color: var(--color-texto);
+    text-decoration: none;
+}
+
+main p a:hover{
+    color: #394cf8;
+    text-decoration: underline;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input{
+    width: 30%; 
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: none;
+    border-left: 2px solid var(--color-primario);
+    border-top: 2px solid var(--color-primario);
+    background: #6367a554;
+    margin: auto;
+    max-width: 60%;
+    box-shadow: 0px 0px 5px #0006;
+    border-radius: 4px 0 0 0;
+}
+
+button:hover{
+    background-color: #474747 ;
+}
+
+select{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: solid 1px var(--color-primario);
+    background: #6367a554;
+    margin: auto;
+    max-width: 60%;
+    box-shadow: 0px 0px 5px #0006;
+    border-radius: 4px;
+}
+
+select:hover{
+    cursor: pointer;
+}
+
+textarea{
+    width: 30%;
+    box-sizing: border-box;
+    padding: 6px 12px;
+    border: solid 1px var(--color-primario);
+    background: #6367a554;
+    margin: auto;
+    max-width: 30%;
+    min-width: 30%;
+    resize: none;
+    box-shadow: 0px 0px 5px #0006;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+}
+
+div{
+    margin: 0.5rem;
+}

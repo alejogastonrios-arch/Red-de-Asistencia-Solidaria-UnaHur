@@ -41,25 +41,13 @@ header{
     background-color: var(--color-fondo);
     color: var(--color-fondo);
     padding: 1rem 1.5 rem;
-    text-align: center;
 }
-/*Menú Navegación*/
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
+header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
 }
-nav a{
-    color: var(--color-acento);
-    text-decoration: none;
-    font-weight: 600;
-}
-nav a:hover{
-    color: var(--color-texto);
-    text-decoration: underline;
-}
-/*Main  Secciones*/
+
 main{
     padding: 2rem 0;
 }
