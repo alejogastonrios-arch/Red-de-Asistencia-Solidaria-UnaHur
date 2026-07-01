@@ -48,6 +48,22 @@ header img{
     border-radius: 50%;
 }
 
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+}
+nav a{
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: 600;
+}
+nav a:hover{
+    color: var(--color-texto);
+    text-decoration: underline;
+}
+
 main{
     padding: 2rem 0;
 }
@@ -74,6 +90,19 @@ figcaption{
     text-align: center;
     font-style: italic;
     margin-top: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: var(--color-primario);
+    color: var(--color-texto-claro);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #474747 ;
 }
 /*FOOTER*/
 footer{

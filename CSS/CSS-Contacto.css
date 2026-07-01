@@ -19,7 +19,6 @@ body{
     font-family: var(--fuente-principal);
     font-size: 1rem;
     line-height: 1.6;
-    text-align: center;
     color: var(--color-texto);
     background-color: var(--color-texto-claro);
     max-width: 1100px;
@@ -27,17 +26,23 @@ body{
     padding: 0 1rem;
 }
 
-h1 {text-align: center;}
-h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
-h2{ font-size: 1.50rem; color: var(--color-texto); text-align: center;}
-h3{font-size: 1.25rem; color: var(--color-acento);}
-p{margin-top: 1rem;}
-
 header{
     background-color: var(--color-fondo);
     color: var(--color-fondo);
     padding: 1rem 1.5 rem;
 }
+
+header img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+h1 {text-align: center;}
+h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
+h2{ font-size: 1.50rem; color: var(--color-texto); text-align: center;}
+h3{font-size: 1.25rem; color: var(--color-acento);}
+p{margin-top: 1rem;}
 
 nav ul{
     list-style: none;
@@ -77,7 +82,7 @@ button{
 input{
     width: 30%; 
     box-sizing: border-box;
-    padding: 6px 12px;
+    padding: 10px 12px;
     border: none;
     border-left: 2px solid var(--color-primario);
     border-top: 2px solid var(--color-primario);
@@ -121,6 +126,12 @@ textarea{
     box-shadow: 0px 0px 5px #0006;
     border-radius: 4px;
     font-family: "Inter", sans-serif;
+}
+
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 div{
