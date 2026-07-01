@@ -29,7 +29,7 @@ body{
 
 h1, h2, h3{font-size: 2rem;}
 h1{text-align: center; color: var(--color-acento)}
-h2{text-align: center; font-size: 1.50rem; color: var(--color-texto);}
+h2{text-align: center; font-size: 1.50rem; color: var(--color-texto); padding-top: 1rem;}
 h3{font-size: 1.25rem; color: var(--color-texto);}
 p{margin-top: 1rem;}
 
@@ -67,7 +67,6 @@ div img{
     padding-bottom: 2rem;
 }
 
-
 img{
     box-sizing: border-box;
     height: 25rem;
@@ -78,7 +77,6 @@ img{
     display: flex;
     align-items: center;
     padding-right: 5rem;
-    padding-top: 1rem;
 }
 
 .acompañamiento img{
@@ -183,7 +181,7 @@ button:hover{
 footer{
     background-color: var(--color-primario);
     color: var(--color-acento);
-    padding: 0.5rem;
+    padding-top: 0.5rem;
     text-align: center;
 }
 

@@ -22,13 +22,13 @@ body{
     color: var(--color-texto);
     background-color: var(--color-texto-claro);
     max-width: 1100px;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 1rem;
 }
 
 h1, h2, h3{font-size: 2rem;}
 h1{text-align: center; color: var(--color-acento)}
-h2{text-align: center; font-size: 1.50rem; color: var(--color-texto);}
+h2{text-align: center; font-size: 1.50rem; color: var(--color-texto); padding-top: 1rem;}
 h3{font-size: 1.25rem; color: var(--color-texto);}
 p{margin-top: 1rem;}
 
@@ -56,7 +56,7 @@ header img{
 
 .navegacion{
     text-decoration: underline;
-    text-decoration-color: var(--color-acento)
+    text-decoration-color: var(--color-acento);
 }
 
 nav ul{
