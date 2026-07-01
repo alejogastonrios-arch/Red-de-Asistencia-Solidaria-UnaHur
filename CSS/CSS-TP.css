@@ -1,24 +1,21 @@
-/*
-EJEMPLO
-h2{color: blue;}*/
 
 :root{
     --color-primario: #1A2B4A;
-    --color-acento:#62979e;
+    --color-nav: #000000;
+    --color-acento:#7192ba;
     --color-texto:#1A1A1A;
     --color-fondo:#15225e;
     --color-texto-claro:#FFFFFF;
-    --fuente-principal: "Inter", sans-serif,
-
+    --fuente-principal: "Inter", sans-serif;
 }
-/*RESET BASICO - setear a cero, es buena costrumbre*/
+
 *{box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
-/*Estilo Globales*/
+
 html{font-size: 18px;}
+
 body{
     font-family: var(--fuente-principal);
     font-size: 1rem;
@@ -29,31 +26,75 @@ body{
     margin: 0 auto;
     padding: 0 1rem;
 }
-/*Tipografía*/
-h1 {text-align: center;}
-h1, h2, h3{font-size: 2rem; color: var(--color-acento);}
-h2{ font-size: 1.50rem; color: var(--color-texto); text-align: center;}
-h3{font-size: 1.25rem; color: var(--color-acento);}
+
+h1, h2, h3{font-size: 2rem;}
+h1{text-align: center; color: var(--color-acento)}
+h2{text-align: center; font-size: 1.50rem; color: var(--color-texto);}
+h3{font-size: 1.25rem; color: var(--color-texto);}
 p{margin-top: 1rem;}
 
-/*HEADER*/
 header{
     background-color: var(--color-fondo);
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
-    padding: 1rem 1.5 rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 5px;
+    min-width: 500px;
+    width: 100%;
 }
+
 header img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
 }
 
 .titulo{
+    padding-left: 3rem;
+    padding-right: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.navegacion{
+    text-decoration: underline;
+    text-decoration-color: var(--color-acento)
+}
+
+div img{
+    box-sizing: border-box;
+    height: 20rem;
+    width: 25rem;
+    padding-bottom: 2rem;
+}
+
+
+img{
+    box-sizing: border-box;
+    height: 25rem;
+    width: 30rem;
+}
+
+.acompañamiento{
+    display: flex;
     align-items: center;
-    padding-left: 5rem;
-    padding-right: 4rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+}
+
+.acompañamiento img{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.campañas_donacion{
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+}
+
+.campañas_donacion img{
+    padding-right: 2rem;
+    padding-top: 1rem;
 }
 
 #inicio ul{
@@ -68,17 +109,17 @@ header img{
 nav ul{
     list-style: none;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     justify-content: center;
 }
 nav a{
     color: var(--color-acento);
-    text-decoration: none;
     font-weight: 600;
 }
 nav a:hover{
-    color: var(--color-texto);
+    color: var(--color-texto-claro);
     text-decoration: underline;
+    transition: all 0.2s ease-in-out;
 }
 
 main{
@@ -96,21 +137,34 @@ p{
 /*FIURE - (sección pero de imágenes)*/
 figure{
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(300px, lfr));
-    gap: 15px;
     justify-items: center;
 }
 figure img{
-    width: 10rem;
-    height: 15rem;
+    width: 100%;
+    height: 10rem;
     object-fit: cover; /*Con esto recortas la imagen manteniendo las proporciones*/
     border-radius: 5px;
 }
+
+.foto_fondo{
+    width: 100%;
+    height: 10rem;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+    background-position: top;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: #000000;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvC7sEVMhCgQ5x4LQGJGi2a4n3AJdMBf5SL6NFEF_2A&s=10");
+}
+
 figcaption{
-    grid-row: 1/-1;
     text-align: center;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 1px;
+    text-decoration: underline;
+
 }
 
 button{
@@ -125,7 +179,7 @@ button{
 button:hover{
     background-color: #474747 ;
 }
-/*FOOTER*/
+
 footer{
     background-color: var(--color-primario);
     color: var(--color-acento);
@@ -136,4 +190,9 @@ footer{
 footer a{
     color: var(--color-acento);
     text-decoration: underline;
+}
+
+footer a:hover{
+    color: var(--color-texto-claro);
+        transition: all 0.2s ease-in-out;
 }
