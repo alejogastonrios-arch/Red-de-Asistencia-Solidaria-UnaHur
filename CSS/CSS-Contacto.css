@@ -28,14 +28,21 @@ body{
 
 header{
     background-color: var(--color-fondo);
-    color: var(--color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding: 1rem 1.5 rem;
 }
-
 header img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+.titulo{
+    align-items: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 h1 {text-align: center;}

@@ -39,13 +39,30 @@ p{margin-top: 1rem;}
 /*HEADER*/
 header{
     background-color: var(--color-fondo);
-    color: var(--color-fondo);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     padding: 1rem 1.5 rem;
 }
 header img{
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+.titulo{
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 4rem;
+}
+
+#inicio ul{
+    padding: 1rem 0 0 3rem;
+    list-style: inside;
+}
+
+#inicio h2{
+    padding-top: 1rem
 }
 
 nav ul{
@@ -71,6 +88,10 @@ section{
     margin-bottom:  2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid;
+}
+
+p{
+    text-indent: 1.5rem;
 }
 /*FIURE - (sección pero de imágenes)*/
 figure{
@@ -108,7 +129,11 @@ button:hover{
 footer{
     background-color: var(--color-primario);
     color: var(--color-acento);
-    padding: 1.5rem;
-    margin-top: 10px;
+    padding: 0.5rem;
     text-align: center;
+}
+
+footer a{
+    color: var(--color-acento);
+    text-decoration: underline;
 }
