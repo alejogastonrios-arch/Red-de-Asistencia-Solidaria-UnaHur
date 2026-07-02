@@ -27,31 +27,31 @@
     <main>
         <h2>Sumate como volunatrio</h2>
         <p>Completa el formulario o escribinos a: <a href="mailto:info@redasistenciasolidaria.org.ar">redasistenciasolidaria@gmail.org.ar</a></p>
-        <form action="#" method="post">
+        <form id="form" action="#" method="post" novalidate>
             <div class="nombre_apellido">
                 <label>Nombre Apellido</label>
-                <input type="text" name="nombre" placeholder="Ej. Esteban Quito" required>
+                <input type="text" id="nombre" placeholder="Ej. Esteban Quito" required>
             </div>
             <div class="email">
                 <label>Email</label>
-                <input type="email" name="email" placeholder="ejemplo@gmail.com.ar" required> 
+                <input type="email" id="email" placeholder="ejemplo@gmail.com.ar" required> 
             </div>
             <div class="telefono">            
-                <label> Telefono</label>
-                <input type="tel" name="telefono" placeholder="+ 54 11 3504-7312" required>
+                <label>Telefono</label>
+                <input type="tel" id="telefono" placeholder="+ 54 11 3504-7312" required>
             </div>
             <div class="programa">
-                <label>Selecionar</label>
-                <select name="programa" required>
+                <label>Seleccionar</label>
+                <select id="programa" required>
                     <option value="">Elegir programa...</option>
-                    <option value="ccm">Chef Comeores Moviles</option>
+                    <option value="ccm">Chef Comedores Moviles</option>
                     <option value="ca">Donacion alimentaria</option>
-                    <option value="ec">Ecuelas Conectadas</option>
+                    <option value="ec">Escuelas Conectadas</option>
                 </select>
             </div>
             <div class="disponibilidad">
                 <label>Disponibilidad</label>
-                <select name="Disponibilidad" required>
+                <select id="disp" required>
                     <option value="">Turno</option>
                     <option value="Manana">Mañana</option>
                     <option value="Tarde">Tarde</option>
@@ -60,15 +60,15 @@
             </div>
             <div class="mensaje">
                 <label>Mensaje</label>
-                <textarea name="mensaje" rows="4 " placeholder="Contanos un poco"></textarea>
+                <textarea id="mensaje" rows="4" placeholder="Contanos un poco"></textarea>
             </div>
+            <div id="msg-form"></div>
             <div class="enviar">
-                <button type="submit">Enviar</button>
+            <button type="submit">Enviar</button>
             </div>
         </form>
     </main>
     <button id="btn-modo" class="btn btn-outline-secondary btn-sm">Modo Oscuro</button>
     <script src="./JS/Modos_y_Formulario.js"></script>
-
 </body>
 </html>

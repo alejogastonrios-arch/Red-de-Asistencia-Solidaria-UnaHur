@@ -28,7 +28,15 @@ body{
 }
 
 body.modo-oscuro{
-    background-color: #1A1A1A;
+    background-color: var(--color-texto);
+    color: #a3a3a3;
+}
+
+body.modo-oscuro h2{
+    color: #a3a3a3;
+}
+
+body.modo-oscuro h3{
     color: #a3a3a3;
 }
 
