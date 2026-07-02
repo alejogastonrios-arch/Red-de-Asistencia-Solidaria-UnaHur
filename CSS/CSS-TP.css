@@ -32,26 +32,6 @@ body.modo-oscuro{
     color: #a3a3a3;
 }
 
-header.modo-oscuro{
-    background-color: #cacaca;
-    display: flex;
-    align-items: center;
-    padding: 0.5rem 0.5rem;
-    border-radius: 5px;
-    min-width: 500px;
-    width: 100%;
-}
-
-nav a.modo-oscuro{
-    color: var(--color-texto);
-    font-weight: 600;
-}
-nav a:hover.modo-oscuro{
-    color: var(--color-texto-claro);
-    text-decoration: underline;
-    transition: all 0.2s ease-in-out;
-}
-
 h1, h2, h3{font-size: 2rem;}
 h1{text-align: center; color: var(--color-acento)}
 h2{text-align: center; font-size: 1.50rem; color: var(--color-texto); padding-top: 0.5rem;}
