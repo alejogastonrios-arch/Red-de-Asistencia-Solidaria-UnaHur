@@ -1,4 +1,4 @@
-
+/*PRESET*/
 :root{
     --color-primario: #1A2B4A;
     --color-nav: #000000;
@@ -8,11 +8,13 @@
     --color-texto-claro:#FFFFFF;
     --fuente-principal: "Inter", sans-serif;
 }
-
+/*RESET*/
 *{box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+/*GENERAL*/
 
 html{font-size: 18px;}
 
@@ -62,38 +64,21 @@ header img{
     border-radius: 50%;
 }
 
-table, th, td{
-    border-collapse: collapse;
-    border-style: solid;
-    border-color: #4A658A;
-    text-align: center;
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
-
-table{
-    margin: 0 auto;
-    box-shadow: 10px 10px 10px #0006;
+nav a{
+    color: var(--color-acento);
+    font-weight: 600;
 }
-
-.titulo_tabla{
-    margin-bottom: 1rem;
+nav a:hover{
+    color: var(--color-texto-claro);
+    text-decoration: underline;
+    transition: all 0.2s ease-in-out;
 }
-
-th{
-    background-color: #162651;
-    color: #a3a3a3;
-    padding: 0.2rem;
-}
-
-td{
-    padding: 0.5rem;
-    background-color: #7892B9; 
-    color: var(--color-texto)
-}
-
-.valores ul{
-    padding-left: 4rem;
-}
-
 
 .titulo{
     padding-left: 3rem;
@@ -106,6 +91,46 @@ td{
     text-decoration-color: var(--color-acento)
 }
 
+main{
+    padding: 2rem 0;
+}
+section{
+    margin-bottom:  2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid;
+}
+
+p{
+    text-indent: 1.5rem;
+}
+
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-acento);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+footer a{
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: var(--color-texto-claro);
+        transition: all 0.2s ease-in-out;
+}
+
+/*INDEX*/
+
+#inicio ul{
+    padding: 1rem 0 0 4rem;
+}
+
+#inicio h2{
+    padding-top: 1rem
+}
+
 div img{
     box-sizing: border-box;
     height: 20rem;
@@ -113,10 +138,45 @@ div img{
     padding-bottom: 2rem;
 }
 
-img{
-    box-sizing: border-box;
-    height: 25rem;
-    width: 30rem;
+.foto_fondo{
+    width: 100%;
+    height: 10rem;
+    margin-top: 20px;
+    margin-bottom: 9px;
+    border-radius: 5px;
+    background-position: top;
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: #000000;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvC7sEVMhCgQ5x4LQGJGi2a4n3AJdMBf5SL6NFEF_2A&s=10");
+}
+
+.titulo_tabla{
+    margin-bottom: 1rem;
+}
+
+table, th, td{
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: #4A658A;
+    text-align: center;
+}
+
+table{
+    margin: 0 auto;
+    box-shadow: 10px 10px 10px #0006;
+}
+
+th{
+    background-color: #294080;
+    color: #c7c7c7;
+    padding: 0.2rem;
+}
+
+td{
+    padding: 0.5rem;
+    background-color: #FFFFFF;
+    color: var(--color-texto);
 }
 
 .acompañamiento{
@@ -141,28 +201,81 @@ img{
     padding-top: 1rem;
 }
 
-#inicio ul{
-    padding: 1rem 0 0 4rem;
+/*NOSOTROS*/
+
+.valores{
+    padding-top: 1rem;
 }
 
-#inicio h2{
-    padding-top: 1rem
+.valores ul{
+    padding-left: 4rem;
 }
 
-nav ul{
-    list-style: none;
+.valores li{
+    padding-bottom: 1rem;
+}
+
+.enfoque{
+    padding-top: 1rem;
+}
+
+.enfoque h4{
+    padding-top: 1rem;
+}
+
+.grafico img{
+    height: 30rem;
+    width: 55rem;
+    padding: 2rem;
+    align-items: center;
+}
+
+figcaption{
+    font-style: italic;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+figure img{
+    text-align: center;
+}
+
+/*PROGRAMAS*/
+
+img{
+    box-sizing: border-box;
+    height: 15rem;
+    width: 20rem;
+}
+
+.comedores_moviles{
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    padding-right: 1rem;
 }
-nav a{
-    color: var(--color-acento);
-    font-weight: 600;
+
+.comedores_moviles img{
+    padding: 2rem;
 }
-nav a:hover{
-    color: var(--color-texto-claro);
-    text-decoration: underline;
-    transition: all 0.2s ease-in-out;
+
+.alimentos{
+    display: flex;
+    padding-right: 5rem;
+}
+
+.alimentos img{
+    padding-left: 2rem;
+    padding-top: 1rem;
+}
+
+.escuelas{
+    display: flex;
+    padding-right: 5rem;
+}
+
+.escuelas img{
+    padding-right: 2rem;
+    padding-top: 1rem;
 }
 
 main{
@@ -176,38 +289,6 @@ section{
 
 p{
     text-indent: 1.5rem;
-}
-/*FIURE - (sección pero de imágenes)*/
-figure{
-    display: grid;
-    justify-items: center;
-}
-figure img{
-    width: 100%;
-    height: 10rem;
-    object-fit: cover; /*Con esto recortas la imagen manteniendo las proporciones*/
-    border-radius: 5px;
-}
-
-.foto_fondo{
-    width: 100%;
-    height: 10rem;
-    margin-top: 20px;
-    margin-bottom: 9px;
-    border-radius: 5px;
-    background-position: top;
-    background-size:cover;
-    background-attachment: fixed;
-    background-color: #000000;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmvC7sEVMhCgQ5x4LQGJGi2a4n3AJdMBf5SL6NFEF_2A&s=10");
-}
-
-figcaption{
-    text-align: center;
-    font-style: italic;
-    margin-top: 1px;
-    text-decoration: underline;
-
 }
 
 button{
@@ -227,21 +308,4 @@ button:hover{
     box-sizing: border-box;
     padding: 1rem;
     margin: 1rem;
-}
-
-footer{
-    background-color: var(--color-primario);
-    color: var(--color-acento);
-    padding-top: 0.5rem;
-    text-align: center;
-}
-
-footer a{
-    color: var(--color-acento);
-    text-decoration: underline;
-}
-
-footer a:hover{
-    color: var(--color-texto-claro);
-        transition: all 0.2s ease-in-out;
 }
