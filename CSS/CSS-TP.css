@@ -6,7 +6,7 @@
     --color-texto:#1A1A1A;
     --color-fondo:#15225e;
     --color-texto-claro:#FFFFFF;
-    --fuente-principal: "Inter", sans-serif;
+    --fuente-principal: "Raleway", "Monserrat";
 }
 /*RESET*/
 *{box-sizing: border-box;
@@ -45,7 +45,7 @@ body.modo-oscuro h3{
 h1, h2, h3{font-size: 2rem;}
 h1{text-align: center; color: var(--color-acento)}
 h2{text-align: center; font-size: 1.50rem; color: var(--color-texto); padding-top: 0.5rem;}
-h3{font-size: 1.25rem; color: var(--color-texto); padding: 1rem;}
+h3{font-size: 1.25rem; color: var(--color-texto); padding: 1rem;text-decoration: underline;}
 p{margin-top: 1rem;}
 
 header{
