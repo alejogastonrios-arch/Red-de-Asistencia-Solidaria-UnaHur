@@ -61,6 +61,23 @@ header img{
     border-radius: 50%;
 }
 
+footer{
+    background-color: var(--color-primario);
+    color: var(--color-acento);
+    padding-top: 0.5rem;
+    text-align: center;
+}
+
+footer a{
+    color: var(--color-acento);
+    text-decoration: underline;
+}
+
+footer a:hover{
+    color: var(--color-texto-claro);
+        transition: all 0.2s ease-in-out;
+}
+
 .titulo{
     padding-left: 3rem;
     padding-right: 2rem;
