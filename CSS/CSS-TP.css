@@ -291,6 +291,18 @@ p{
     text-indent: 1.5rem;
 }
 
+#comedores{
+    margin: 1rem 0 0 2rem
+}
+
+#donacion_alm{
+    margin: 0 0 1rem 45rem
+}
+
+#esculas_con{
+    margin: 1rem 0 2rem 0
+}
+
 button{
     padding: 10px 20px;
     background-color: var(--color-primario);
